@@ -134,6 +134,7 @@ class Model:
             device=device
         ).to(device)
         self.device = device
+        self.model = self.model.eval()
 
     def predict_with_caption(
         self,
